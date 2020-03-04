@@ -28,7 +28,6 @@ Route::get('blog', 'BlogController@home');
 Route::get('blog/about', 'BlogController@about');
 Route::get('blog/contact', 'BlogController@contact');
 
-
 Route::get('book/', 'BookController@show');
 Route::get('book/tambah', 'BookController@showAddView');
 Route::post('book/insert', 'BookController@insert');
