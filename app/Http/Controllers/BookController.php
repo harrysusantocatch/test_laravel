@@ -57,5 +57,4 @@ class BookController extends Controller
         $books = BookAPI::getBooks();
         return $books;
     }
-
 }
