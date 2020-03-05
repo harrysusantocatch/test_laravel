@@ -37,3 +37,13 @@ Route::post('book/update', 'BookController@update');
 Route::get('book/delete/{id}', 'BookController@delete');
 
 Route::get('book/googlebook', 'BookController@showBookGoogle');
+
+
+Route::get('student', 'StudentController@showAllStudent');
+Route::get('student/{id}', 'StudentController@showStudentByID');
+Route::get('form', 'StudentController@showForm');
+Route::get('form/edit/{id}', 'StudentController@showFormEdit');
+Route::post('student/insert', 'StudentController@insertStudent');
+Route::post('student/update', 'StudentController@updateStudent');
+Route::get('student/delete/{id}', 'StudentController@deleteStudent');
+
