@@ -35,3 +35,5 @@ Route::post('book/insert', 'BookController@insert');
 Route::get('book/update/{id}', 'BookController@showUpdateView');
 Route::post('book/update', 'BookController@update');
 Route::get('book/delete/{id}', 'BookController@delete');
+
+Route::get('book/googlebook', 'BookController@showBookGoogle');

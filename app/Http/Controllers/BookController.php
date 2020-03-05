@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\book;
+use App\Http\APIHelper\BookAPI;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -50,6 +51,11 @@ class BookController extends Controller
     public function delete($id){
         DB::table('books')->where('id', $id)->delete();
         return redirect('book');
+    }
+
+    public function showBookGoogle(){
+        $books = BookAPI::getBooks();
+        return $books;
     }
 
 }
